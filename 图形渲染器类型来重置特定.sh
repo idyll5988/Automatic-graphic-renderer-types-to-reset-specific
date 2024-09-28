@@ -13,7 +13,6 @@ if ! command -v resetprop > /dev/null 2>&1; then
     export resetprop
 fi
 case "$render" in
-    echo "$date *当前渲染引擎$render*" 
     "skiagl")
         resetprop debug.hwui.renderer skiagl
         resetprop vendor.debug.renderengine.backend skiaglthreaded
